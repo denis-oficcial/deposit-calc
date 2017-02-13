@@ -36,7 +36,6 @@ int main()
         }
     }else{
         printf("\nThe entered data is not valid.");
-    };
-    
+    };   
     return 0;
 }
