@@ -28,11 +28,11 @@ int main()
     printf ("Please enter your deposit amount and term of the deposit:\n");
     scanf ("%d %d", &sum, &time);
     if (sum >= 10 && time <= 365){
-        printf("Percents: ");
+        printf("Sum: ");
         if(sum <= 100){
-            printf("%d",switching(time,staf[0]));
+            printf("%d",sum+(sum*switching(time,staf[0]))/100) ;
         }else{
-            printf("%d",switching(time,staf[1]));
+            printf("%d",sum+sum*(switching(time,staf[1]))/100) ;
         }
     }else{
         printf("\nThe entered data is not valid.");
