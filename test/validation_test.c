@@ -1,11 +1,19 @@
 #include <stdio.h>
 #include <ctest.h>
 
-CTEST(validation_test, input_correct)
+CTEST(validation_test, date_correct)
 {
-	int sum, time;
-	scanf("%d %d", &sum, &time);
+	int time;
+	scanf("%d", &time);
 
 	ASSERT_INTERVAL(0, 365, time);
 }
 
+CTEST(validation_test, sum_correct)
+{
+	int sum;
+	scanf("%d", &sum);
+	ASSERT_TRUE(sum > 10);
+	ASSERT_INTERVAL(10,100000000000, sum);
+	
+}
