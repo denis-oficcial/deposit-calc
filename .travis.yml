@@ -1,1 +1,6 @@
 language: c
+compiler: gcc
+script:
+-make
+-bin/deposit_test
+-bin/valid_test
