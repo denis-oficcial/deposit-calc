@@ -1,5 +1,10 @@
 all:bin/deposits
 
+build:
+	mkdir build
+	mkdir build/src
+	mkdir build/test
+
 bin/deposits: build/src/main.o build/src/deposit.o
 	gcc -Wall -Werror -o bin/deposits build/src/main.o build/src/deposit.o
 

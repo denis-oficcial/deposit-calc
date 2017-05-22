@@ -1,7 +1,8 @@
 language: c
 compiler: gcc
 script:
-	- make valid_test
-	- make deposit_test
-	- bin/deposit-test
-	- bin/valid-test
+- make bul
+- make valid_test
+- make deposit_test
+- bin/deposit-test
+- bin/valid-test
