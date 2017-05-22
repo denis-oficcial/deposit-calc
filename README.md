@@ -1,2 +1,1 @@
-# deposit-calc
-Variant 2
+https://travis-ci.org/denis-oficcial/deposit-calc.svg?branch=master
