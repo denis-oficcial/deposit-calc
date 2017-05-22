@@ -14,6 +14,6 @@ CTEST(validation_test, sum_correct)
 	int sum;
 	scanf("%d", &sum);
 	ASSERT_TRUE(sum > 10);
-	ASSERT_INTERVAL(10,100000000000, sum);
+	ASSERT_INTERVAL(10,10000000, sum);
 	
 }
