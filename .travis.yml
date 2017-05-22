@@ -2,5 +2,7 @@ language: c
 compiler: gcc
 script:
 -make
+-make valid_test
+-make deposit_test
 -bin/deposit_test
 -bin/valid_test
